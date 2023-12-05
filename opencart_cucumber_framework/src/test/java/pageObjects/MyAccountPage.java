@@ -17,18 +17,19 @@ public class MyAccountPage extends BasePage {
 	WebElement lnkLogout;
 	
 
-	public boolean isMyAccountPageExists()   // MyAccount Page heading display status
+	public boolean isMyAccountPageExists()   // MyAccount Page heading display status validation
 	{
 		try {
-			return (msgHeading.isDisplayed());
-		} catch (Exception e) {
+			return (msgHeading.isDisplayed()); // 
+		}
+		catch (Exception e) 
+		{
 			return (false);
 		}
 	}
 
-	public void clickLogout() {
+	public void clickLogout() 
+	{
 		lnkLogout.click();
-
 	}
-	
 }
